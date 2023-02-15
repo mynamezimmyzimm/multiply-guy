@@ -51,6 +51,12 @@
                                     <action selector="calculatebutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wde-4P-rLn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gP9-zM-cq7">
+                                <rect key="frame" x="93" y="347" width="207" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="press to round calculate"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -60,6 +66,7 @@
                         <outlet property="answergiver" destination="OpJ-Zk-dHT" id="IzD-CC-Zyp"/>
                         <outlet property="button" destination="tAW-uX-8JV" id="UwM-rM-DaN"/>
                         <outlet property="numberenterer" destination="27f-gq-XMp" id="buq-fR-O3X"/>
+                        <outlet property="roundcalculatebutton" destination="gP9-zM-cq7" id="mUL-fF-zBZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

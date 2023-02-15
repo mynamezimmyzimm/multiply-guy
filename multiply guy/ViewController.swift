@@ -12,6 +12,9 @@ class ViewController: UIViewController {
     //    { big button }
     @IBOutlet weak var button: UIButton!
     
+    @IBOutlet weak var roundcalculatebutton: UIButton!
+    
+    
     @IBOutlet weak var numberenterer: UITextField!
     @IBOutlet weak var ansergiverer2: UITextField!
     
@@ -36,6 +39,8 @@ class ViewController: UIViewController {
         
         
         // Do any additional setup after loading the view here.
+        roundcalculatebutton.addTarget(self, action: #selector(buttonpressed(button: )), for: .touchUpInside)
+        
     }
     
     @IBAction func calculatebutton(_ sender: Any) { //viewDidLoad()
@@ -58,6 +63,11 @@ class ViewController: UIViewController {
         
     
     }
+    
+    
+    @objc func buttonpressed(button: UIButton) {
+            print("button pressed")
+        }
     
 }
 
