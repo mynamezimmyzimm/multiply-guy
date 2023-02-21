@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
     // declaring variable and outlets
@@ -67,6 +68,28 @@ class ViewController: UIViewController {
     
     @objc func buttonpressed(button: UIButton) {
             print("button pressed")
+        string1 = numberenterer.text ?? ""
+
+        string2 = numberenterer.text ?? ""
+        
+        DoubleValue = Double(string1) ?? 0.0
+        
+        
+        DoubleValue2 = Double(string2) ?? 0.0
+        
+        
+        doubleValueAnswer = DoubleValue * DoubleValue2
+        //doubleValueRounder = round(doubleValueAnswer)
+        let numberOfPlaces = 2.0
+        let multiplier = pow(10.0, numberOfPlaces)
+     //   let num = 10.12345
+        let rounded = round(doubleValueAnswer * multiplier) / multiplier
+        print(rounded)
+        answergiver.text = "\(rounded) "
+        
+        
+        
+        
         }
     
 }
